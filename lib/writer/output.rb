@@ -1,13 +1,16 @@
-module Writer
-    class Output
-        def self.call(output:)
-            new.call(output: output)
-        end
+# frozen_string_literal: true
 
-        def call(output:)
-            output.each do |visit|
-                puts "#{visit}"
-            end
-        end
+module Writer
+  # handles writing to stdout
+  class Output
+    def self.call(output:)
+      new.call(output: output)
     end
+
+    def call(output:)
+      output.each do |visit|
+        puts visit.to_s
+      end
+    end
+  end
 end

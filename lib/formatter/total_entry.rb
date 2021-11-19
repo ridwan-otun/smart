@@ -1,11 +1,14 @@
-require_relative "base"
+# frozen_string_literal: true
+
+require_relative 'base'
 
 module Formatter
-    class TotalEntry < Base
-        private
+  # inherits from base and provides private method for formatting in total mode
+  class TotalEntry < Base
+    private
 
-        def format(route:, count:)
-            "#{route} #{count} visits"
-        end
+    def format(route:, count:)
+      "#{route} #{count} visits"
     end
+  end
 end

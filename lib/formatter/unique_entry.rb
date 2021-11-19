@@ -1,11 +1,14 @@
-require_relative "base"
+# frozen_string_literal: true
+
+require_relative 'base'
 
 module Formatter
-    class UniqueEntry < Base
-        private
+  # inherits from base and provides private method for formatting in unique mode
+  class UniqueEntry < Base
+    private
 
-        def format(route:, count:)
-            "#{route} #{count} unique views"
-        end
+    def format(route:, count:)
+      "#{route} #{count} unique views"
     end
+  end
 end

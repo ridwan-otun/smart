@@ -1,0 +1,29 @@
+require:
+  - rubocop-performance
+
+AllCops:
+  Include:
+    - '**/*.rb'
+    - '**/Gemfile'
+  TargetRubyVersion: 3.0
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Enabled: false
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle:
+    - key
+    - table
+  EnforcedColonStyle:
+    - key
+    - table
+
+Layout/AccessModifierIndentation:
+  Enabled: false
