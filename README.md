@@ -1,4 +1,4 @@
-##SMART
+## SMART
 
 Smart is a simple Ruby Log Parser which displays the most visited routes or the most uniquely visited route based on the mode passed to it via the CLI
 ## Usage
