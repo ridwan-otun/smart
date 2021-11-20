@@ -26,3 +26,8 @@ To see the unique visits count, change the `mode` argument:
 You can also use --help to get help e.g.
 
     ./bin/parser.rb webserver.log --help
+
+## Running tests
+
+To run the tests, go to the root folder, and run `rspec`. 
+The code currently has 97.98% coverage.
