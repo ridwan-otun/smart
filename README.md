@@ -23,5 +23,6 @@ To see the unique visits count, change the `mode` argument:
 
     ./bin/parser.rb webserver.log --mode=unique
 
-You can also use --help to get help
+You can also use --help to get help e.g.
+
     ./bin/parser.rb webserver.log --help
